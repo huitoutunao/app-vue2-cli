@@ -1,3 +1,7 @@
-> 1%
-last 2 versions
-not dead
+# 这里的每一行都是通过 or(或) 连接
+> 0.2% # 市场占有率超过 0.2%
+Android >= 4 # Android(WebView) 跟随系统版本
+iOS >= 10 # iOS 浏览器跟随系统版本
+not ie <= 8 # 不支持低于 ie8 的浏览器
+last 2 versions # 支持所有浏览器的最近的 2 个版本
+not dead # dead 即 24 个月无官方支持或更新
