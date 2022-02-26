@@ -1,6 +1,6 @@
 {
   "name": "app-vue2-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "app vue2 start",
   "private": true,
   "scripts": {
