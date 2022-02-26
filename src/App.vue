@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +24,7 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  background-color: #000000;
 }
 
 nav a.router-link-exact-active {
