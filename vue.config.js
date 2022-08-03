@@ -11,6 +11,7 @@
  * TODO: 开启 gzip 压缩
  */
 const StylelintPlugin = require('stylelint-webpack-plugin')
+const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
 const IS_PROD = ['production'].includes(process.env.NODE_ENV)
 const IS_DEV = ['development'].includes(process.env.NODE_ENV)
@@ -27,15 +28,27 @@ module.exports = {
       },
     },
   },
-  configureWebpack: (config) => {
-    const plugins = []
+  configureWebpack: () => {
+    const cfg = {}
     if (IS_DEV) {
-      plugins.push(
+      cfg.plugins = [
         new StylelintPlugin({
           files: ['src/**/*.vue', 'src/assets/**/*.scss'],
-        })
-      )
+        }),
+      ]
     }
-    config.plugins = [...config.plugins, ...plugins]
+    if (IS_PROD) {
+      cfg.plugins = [
+        // 开启 gzip
+        new CompressionWebpackPlugin({
+          test: /\.(js|css)(\?.*)?$/i,
+          filename: '[path][base].gz',
+          threshold: 10240,
+          minRatio: 0.8,
+          deleteOriginalAssets: false,
+        }),
+      ]
+    }
+    return cfg
   },
 }
