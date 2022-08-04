@@ -8,7 +8,7 @@
     "build:prod": "vue-cli-service build --mode prod",
     "build:rc": "vue-cli-service build --mode rc",
     "test:unit": "vue-cli-service test:unit",
-    "lint:css": "stylelint --fix **/*.{vue,css,scss,sass}",
+    "lint:css": "stylelint --fix ./src/**/*.{vue,css,scss,sass}",
     "lint:js": "vue-cli-service lint",
     "prepare": "husky install"
   },
@@ -56,6 +56,6 @@
   },
   "lint-staged": {
     "*.{vue,js}": "vue-cli-service lint",
-    "**/*.{vue,css,scss,sass}": "stylelint --fix"
+    "./src/**/*.{vue,css,scss,sass}": "stylelint --fix"
   }
 }
