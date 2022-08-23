@@ -37,13 +37,13 @@
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-vue": "^8.0.3",
-    "eslint-plugin-vuejs-accessibility": "^1.1.0",
+    "eslint-plugin-vuejs-accessibility": "1.1.0",
     "husky": "^7.0.4",
     "jest": "^27.0.5",
     "lint-staged": "^12.3.4",
-    "node-sass": "^7.0.1",
     "postcss-html": "^1.3.0",
     "prettier": "^2.5.1",
+    "sass": "^1.54.5",
     "sass-loader": "^12.6.0",
     "stylelint": "^14.5.3",
     "stylelint-config-prettier": "^9.0.3",
@@ -57,5 +57,9 @@
   "lint-staged": {
     "*.{vue,js}": "vue-cli-service lint",
     "./src/**/*.{vue,css,scss,sass}": "stylelint --fix"
+  },
+  "engines": {
+    "node": ">=12.22.10",
+    "npm": ">6.0.0"
   }
 }
