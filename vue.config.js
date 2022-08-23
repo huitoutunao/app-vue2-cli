@@ -1,6 +1,7 @@
 /* eslint no-param-reassign: off */
 /**
  * 下面内容按需添加，参考链接：https://github.com/staven630/vue-cli4-config
+ * https://github.com/yulimchen/vue3-h5-template
  * TODO: 压缩图片
  * TODO: 自动生成雪碧图
  * TODO: 打包分析
