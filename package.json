@@ -59,7 +59,7 @@
     "./src/**/*.{vue,css,scss,sass}": "stylelint --fix"
   },
   "engines": {
-    "node": ">=12.22.10",
+    "node": "^12.22.10",
     "npm": ">6.0.0"
   }
 }
