@@ -1,6 +1,6 @@
 # app-vue2-cli
 
-通过 `@vue/cli5` 初始 `vue2` 项目模板。
+通过 `@vue/cli5` 初始 `vue2.6.x` 项目模板。
 
 ## stylelint
 
@@ -91,6 +91,14 @@ mount(TestView, {
   localVue,
   router
 })
+```
+
+## git 提交代码解决 lf 和 crlf 冲突
+
+git 全局配置如下命令
+```sh
+# 提交时转换为 lf，检出时不转换
+$ git config --global core.autocrlf input
 ```
 
 ## Project setup
