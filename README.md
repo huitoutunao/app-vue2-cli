@@ -1,6 +1,6 @@
 # app-vue2-cli
 
-通过 `@vue/cli5` 初始 `vue2.6.x` 项目模板。
+通过 `@vue/cli5` 初始 `vue2.6` 项目模板。
 
 ## stylelint
 
